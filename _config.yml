@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "6Hee의 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "개발자(진) 6Hee"
+name                     : "6Hee"
 description              : "프론트엔드 개발자가 되기 위한, 나를 위한 공부 블로그"
 url                      : "https://6Hee.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -255,16 +255,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -288,7 +288,8 @@ defaults:
       comments: # true
       share: true
       related: true
-
+      show_date: true
+      
   # _pages
   - scope:
       path: "_pages"
@@ -296,3 +297,5 @@ defaults:
     values:
       layout: single
       author_profile: true 
+
+date_format: "%Y-%m-%d"

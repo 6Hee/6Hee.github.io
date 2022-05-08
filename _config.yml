@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "개발자(진) 6Hee"
+  name             : "6Hee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**프론트엔드 개발자**가 되기 위한<br> 나를 위한 공부 블로그"
   location         : "Republic of Korea"
